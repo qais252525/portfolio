@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-gray-100 text-blue-950 ">
+
+    
+
+
+
+    <nav class="border-b-2 shadow-sm">
+        <div class="max-w-7xl mx-auto px-3 py-4 flex justify-between items-center">
+            <!-- Logo -->
+             <div class="text-xl"><a href="">
+                 <img src="https://resources.finalsite.net/images/f_auto,q_auto/v1724859698/cesi/oi50oenu5ilxbiu7ssam/QAISlogosq1.png" alt="" class=" w-40  lg:h-12 h-8 " ></a></div>
+
+            <!-- Toggle Button -->
+            <div class="flex md:hidden">
+                <button id="toggle" class="text-gray-700 focus:outline-none">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS2XMKeBFc4oGT54rrcJnr3260g60ZvQnxiw&s" alt="" class=" h-8 w-10">
+                </button>
+            </div>
+
+            <!-- Left Navigation Buttons -->
+            <div class="hidden md:flex space-x-9" id="nav-links">
+                    <a href="" class="hover:border-2 border-red-600 border-solid px-3 py-1 rounded-2xl hover:shadow-md active:bg-red-600 active:text-white">Home</a>
+                    <a href="" class="hover:border-2 border-red-600 border-solid px-3 py-1 rounded-2xl hover:shadow-md active:border-2  active:bg-red-600 active:text-white">Services</a>
+                    <a href="" class="hover:border-2 border-red-600 border-solid px-3 py-1 rounded-2xl hover:shadow-md active:border-2  active:bg-red-600 active:text-white" >Template</a>
+                    <a href="" class="hover:border-2 border-red-600 border-solid px-3 py-1 rounded-2xl hover:shadow-md active:border-2  active:bg-red-600 active:text-white" >About</a>
+                    <a href="" class="hover:border-2 border-red-600 border-solid px-3 py-1 rounded-2xl hover:shadow-md active:border-2  active:bg-red-600 active:text-white" >Contact us</a>
+                    <a href="" class="hover:border-2 border-red-600 border-solid px-3 py-1 rounded-2xl hover:shadow-md active:border-2  active:bg-red-600 active:text-white" >Cooming Soon</a>
+            </div>
+
+            <!-- Right Links -->
+            <div class="hidden md:flex space-x-4"> 
+                <a href=""><img src="https://pngimg.com/d/linkedIn_PNG27.png" alt="" class="w-9"></a>
+                <a href=""><img src="https://image.similarpng.com/thumbnail/2020/06/Popular-Logo-Twitter-clipart-PNG.png" alt="" class="w-9"></a>
+                <a href=""><img src="https://p7.hiclipart.com/preview/306/863/765/facebook-computer-icons-social-media-clip-art-fb.jpg" alt="" class="w-9"></a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden" id="mobile-menu" style="display: none;">
+            <div class="flex flex-col space-y-2 px-4 py-2 font-bold">
+                    <a href="" class=" px-3 py-1 rounded-2xl  active:bg-red-600 active:text-white " >Home</a>
+                    <a href="" class=" px-3 py-1 rounded-2xl  active:bg-red-600 active:text-white ">Services</a>
+                    <a href="" class=" px-3 py-1 rounded-2xl  active:bg-red-600 active:text-white ">Template</a>
+                    <a href="" class=" px-3 py-1 rounded-2xl  active:bg-red-600 active:text-white ">About</a>
+                    <a href="" class=" px-3 py-1 rounded-2xl  active:bg-red-600 active:text-white ">Contact us</a>
+                    <a href="" class=" px-3 py-1 rounded-2xl  active:bg-red-600 active:text-white ">Cooming Soon</a>
+                <div class="border-t border-gray-200 mt-2"></div>
+
+                <div class="flex px-3 space-x-6 ">
+                        <a href=""><img src="https://pngimg.com/d/linkedIn_PNG27.png" alt="" class="w-7"></a>   
+                        <a href=""><img src="https://image.similarpng.com/thumbnail/2020/06/Popular-Logo-Twitter-clipart-PNG.png" alt="" class="w-7"></a>
+                        <a href=""><img src="https://p7.hiclipart.com/preview/306/863/765/facebook-computer-icons-social-media-clip-art-fb.jpg" alt="" class="w-7"></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript for Toggle Functionality -->
+    <script>
+        $(document).ready(function() {
+            $('#toggle').click(function() {
+                $('#mobile-menu').toggle();
+            });
+        });
+    </script>
+
+
+
+                                <!-- >>>>>>>>>>>>>>>>>>>>>>>>>> main Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>... -->
+
+
+            <main class=" ">
+                <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Hero Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+                <div class="container m-auto lg:columns-2 columns-1 px w-100vh md:px-2 px-4">
+                    <div class="md:pt-36 pt-20">
+                        <h1 class="font-bold text-[54px] leading-tight mb-4" >Building Your <b class="text-red-700">Digital</b> Dreams </h1>
+                        <h6 class="mb-10">I’m a web developer dedicated to creating user-friendly websites that stand out. With a strong focus on functionality and design, I blend creativity with technical expertise to deliver exceptional online experiences. My goal is to understand your unique vision and turn it into a reality, ensuring that each project reflects your brand’s identity while being accessible and engaging for users.</h6>
+                        <a href="" class="border-2 border-red-600 border-solid px-4 py-3 rounded-2xl hover:shadow-md hover:bg-red-600 hover:text-white  active:bg-red-600 active:text-white font-bold">Explore My Work</a>
+                    </div>
+                    <div class=""><img src="https://png.pngtree.com/png-vector/20231108/ourmid/pngtree-programmer-it-developer-png-image_10439724.png" alt="" class="w-full"></div>
+                </div>
+
+
+                    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Trust logo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+                <div class="flex flex-row  flex-wrap md:mb-20 mb-10">
+                    <div class="md:basis-2/5  basis-5/5 columns-2  md:py-10 md:pl-16 py-4 container  ">                       
+                            <div><h2 class="font-bold lg:text-[28px] text-[18px] text-center ">Microsoft</h2></div>
+                            <div><h2 class="font-bold lg:text-[28px] text-[18px] text-center ">Microsoft</h2></div>
+                    </div>
+
+                    <div class="md:basis-3/5  basis-5/5 columns-3 md:py-10 py-4 bg-red-700 container">
+                        <div><h2 class="font-bold lg:text-[28px] text-[18px] text-center text-white ">Microsoft</h2></div>
+                        <div><h2 class="font-bold lg:text-[28px] text-[18px] text-center  text-white  ">Microsoft</h2></div>
+                        <div><h2 class="font-bold lg:text-[28px] text-[18px] text-center  text-white ">Microsoft</h2></div>
+                    </div>
+
+                </div>
+
+                <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Services  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+                <div class="container lg:px-20 px-4 mx-auto md:py-20 py4 ">
+
+                    <div class="flex md:flex-row flex-col lg:gap-x-44 gap-0 mb-10">
+                        <div class="md:basis-1/4  " ><h2 class="font-bold lg:text-[42px] text-[36px] text-center ">Services</h2></div> 
+                        <div class="md:basis-3/4  "><h6>Our range of professional web development services is designed to help businesses succeed in the digital landscape. From creating stunning websites to offering tailored solutions, we focus on delivering high-quality, reliable, and user-centric results. Every project is approached with a commitment to innovation and excellence. Explore our services below to find the perfect solution for your unique needs.</h6></div>   
+                    </div>
+
+                    <div class="flex md:flex-row flex-col lg:gap-x-44 gap-0 mb-10 ">
+                        <div class="md:basis-1/4  " ><h2 class="font-bold lg:text-[36px] text-[18px] text-center text-red-700 ">100+ </h2> 
+                            <h6 class="text-[16px] text-center">Project completed</h6></div> 
+
+                        <div class="md:basis-3/4 md:columns-2 columns-1 ">
+                            <div class=" md:mb-0 mb-6">
+                                <img src="https://cdn-icons-png.flaticon.com/512/9414/9414296.png" alt="" class="w-20">
+                                <h3 class="font-bold mt-2 mb-1">Custom Web Development</h3>
+                                <p>I create tailored websites from the ground up, ensuring they align with your brand and meet your specific requirements. Using modern frameworks and technologies, I build responsive and user-friendly sites that perform seamlessly across all devices.</p>
+                            </div>
+
+                            <div class="">
+                                <img src="https://cdn-icons-png.flaticon.com/512/10169/10169718.png" alt="" class="w-20">
+                                <h3 class="font-bold mt-2 mb-1">Front-End Development</h3>
+                                <p>I specialize in transforming design concepts into engaging user interfaces. With a focus on HTML, CSS, and JavaScript, I ensure that your website not only looks great but also provides an intuitive user experience.</p>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="flex md:flex-row flex-col lg:gap-x-44 gap-0  mb-10">
+                        <div class="md:basis-1/4  " ><h2 class="font-bold lg:text-[36px] text-[18px] text-center text-red-700 ">99.9% </h2> 
+                            <h6 class="text-[16px] text-center">Satisfied Client</h6></div> 
+
+                        <div class="md:basis-3/4 md:columns-2 columns-1 ">
+                            <div class=" md:mb-0 mb-6">
+                                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-development-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-back-end-internet-seo-website-pack-icons-4521465.png" alt="" class="w-20">
+                                <h3 class="font-bold mt-2 mb-1"> Back-End Development</h3>
+                                <p>Leveraging server-side technologies, I build robust back-end systems that support your website's functionality. Whether you need database management, API integration, or server configuration, I ensure your application runs smoothly and securely.</p>
+                            </div>
+
+                            <div class="">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4159/4159328.png" alt="" class="w-20">
+                                <h3 class="font-bold mt-2 mb-1">E-commerce Solutions</h3>
+                                <p>I develop powerful e-commerce platforms that make online shopping easy and enjoyable for your customers. From product management to secure payment processing, I create customized solutions to help you grow your online business.</p>
+                            </div>
+                        </div>   
+                    </div>
+
+
+                    <div class="flex md:flex-row flex-col lg:gap-x-44 gap-0  ">
+                        <div class="md:basis-1/4  "> </div>
+                           
+
+                        <div class="md:basis-3/4 md:columns-2 columns-1 ">
+                            <div class=" md:mb-0 mb-6">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2169/2169942.png" alt="" class="w-20">
+                                <h3 class="font-bold mt-2 mb-1">Website Maintenance and Support</h3>
+                                <p>I offer ongoing support and maintenance services to ensure your website remains up-to-date, secure, and performing at its best. From regular updates to troubleshooting, I am here to help you every step of the way.</p>
+                            </div>
+
+                            <div class="">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4693/4693249.png" alt="" class="w-20">
+                                <h3 class="font-bold mt-2 mb-1">SEO Optimization</h3>
+                                <p>I implement SEO best practices to improve your website's visibility in search engines. By optimizing content and enhancing site structure, I help drive organic traffic and increase your online presence.</p>
+                            </div>
+                        </div>   
+                    </div>
+
+
+                </div>
+
+
+                <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>.. portfolio >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>... -->
+
+                <div class="container lg:px-20 px-4 mx-auto md:py-20 py-4 ">
+
+                    <h2 class="font-bold lg:text-[42px] text-[36px] underline decoration-red-700 hover:decoration-blue-950 my-4">Portfolio</h2>
+                    <h6 class="mb-10 ">Explore our diverse portfolio showcasing innovative web development projects crafted with precision and creativity. From sleek designs to robust functionalities, each project reflects our commitment to excellence. Let our work inspire your next big idea!</h6>
+
+                    
+                    <div >
+                    <div class="md:basis-3/4 md:columns-2 columns-1 gap-16 mb-16">
+
+                        <div class="bg-slate-100 shadow-lg border-1 rounded-md border-red-700 py-10 px-5">
+                            <a href="https://qais252525.github.io/yt-clone-for-desktop/"><img src="https://miro.medium.com/v2/resize:fit:1200/1*rQB4fmakQa_Cwhwzgsy9YQ.png" alt="" class="w-300"></a>
+                            <h3 class="font-bold mt-2 mb-1 text-[24px]">YouTube Clone </h3>
+                            <p class="mb-5">This project is a YouTube Clone built using Bootstrap, designed to replicate the look and feel of the popular video streaming platform. It features a responsive layout, modern UI elements, and scalable components for a smooth user experience.</p>
+                            <a href="https://qais252525.github.io/yt-clone-for-desktop/" class="font-medium text-red-700">Learn More</a>
+                        </div>
+    
+                        <div class="bg-slate-100  shadow-lg border-1 rounded-md border-red-700 py-8 px-5">
+                            <a href="https://qais252525.github.io/pintrextclon/index.html"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/948/757/datas/gallery.jpg" alt="" ></a>
+                            <h3 class="font-bold mt-2 mb-1 text-[24px]">Pintrest Clone</h3>
+                            <p class="mb-5">This project is a Pinterest Clone crafted using Bootstrap, focusing on creating a visually appealing and responsive design that mirrors the popular image-sharing platform. it 100% responsive and user friendly</p>
+
+                            <a href="https://qais252525.github.io/pintrextclon/index.html" class="font-medium text-red-700">Learn More</a>
+                        </div>
+                    </div>
+
+
+                    <div class="md:basis-3/4 md:columns-2 columns-1 gap-16 mb-16">
+
+                        <div class="bg-slate-100 shadow-lg border-1 rounded-md border-red-700 py-10 px-5">
+                            <a href="https://qais252525.github.io/xactmind.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM3yTZ7sR3kcK419FAHP6-g8AuJDaZeMPVnA&s" alt="" class="w-full"></a>
+                            <h3 class="font-bold mt-2 mb-1 text-[24px]">Xact Mind Colone </h3>
+                            <p class="mb-5">This project is Xact Mind built using Bootstrap, designed to replicate the look and feel of the popular video streaming platform. It features a responsive layout, modern UI elements, and scalable components for a smooth user experience.</p>
+                            <a href="https://qais252525.github.io/xactmind.com/" class="font-medium text-red-700">Learn More</a>
+                        </div>
+    
+                        <div class="bg-slate-100  shadow-lg border-1 rounded-md border-red-700 py-10 px-5">
+                            <a href="https://qais252525.github.io/yt-clone-for-desktop/"><img src="https://miro.medium.com/v2/resize:fit:1200/1*rQB4fmakQa_Cwhwzgsy9YQ.png" alt="" class=""></a>
+                            <h3 class="font-bold mt-2 mb-1 text-[24px]">YouTube Clone </h3>
+                            <p class="mb-5">This project is a YouTube Clone built using Bootstrap, designed to replicate the look and feel of the popular video streaming platform. It features a responsive layout, modern UI elements, and scalable components for a smooth user experience.</p>
+                            <a href="https://qais252525.github.io/yt-clone-for-desktop/" class="font-medium text-red-700">Learn More</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                         <a href="" class=" border-2 border-red-600 border-solid px-4 py-3 rounded-2xl hover:shadow-md hover:bg-red-600 hover:text-white  active:bg-red-600 active:text-white font-bold">Explore How I Can Help</a>
+                    </div>
+                    
+                </div>
+
+
+               
+
+
+
+                <!-- ???????????????????????????? Textimonial >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.. -->
+                <div class="container mx-auto">
+                    
+                    <div>
+                        <h2 class="mb-3 font-bold lg:text-[42px] text-[36px]  my-4 text-center">Client Testimonial</h2>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <!-- Card 1 -->
+                            <div class="bg-gray-100">
+                                <div class="flex flex-col p-4 shadow-md">
+                                    <img class="mb-3 w-16 h-16 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlcmnjU0peyXwLSpUDlzxwS1yxUK-jmd9c_A&s" alt="">
+                                    <h2 class="mb-3 text-2xl font-bold">King 123</h2>
+                                    <p class="mb-3 leading-tight text-left">
+                                         Manager and Client Manager
+                                    </p>
+                                    <p class="leading-tight text-left">
+                                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus porro, blanditiis, ratione possimus accusantium enim nobis maxime incidunt consequatur impedit officiis dignissimos fugit accusamus perferendis culpa libero voluptatem fuga distinctio.
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <!-- Card 2 -->
+                            <div class="bg-gray-100 ">
+                                <div class="flex flex-col p-4 shadow-md ">
+                                    <img class="mb-3 w-16 h-16 rounded-full" src="https://preview.redd.it/is-this-reconstruction-of-a-neandertal-still-accurate-or-v0-exigw2gavaxc1.jpeg?auto=webp&s=655e2cabf44dbc7133f7b2b814177cdda479ab1b" alt="">
+                                    <h2 class="mb-3 text-2xl font-bold">Raja Emaz</h2>
+                                    <p class="mb-3 leading-tight text-left">
+                                        Account Manager and Client Manager
+                                    </p>
+                                    <p class="leading-tight text-left">
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, beatae explicabo nihil velit delectus error, illo omnis labore quia blanditiis non quisquam minus iure similique necessitatibus impedit sapiente alias optio.
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <!-- Card 3 -->
+                            <div class="bg-gray-100">
+                                <div class="flex flex-col p-4 shadow-md">
+                                    <img class="mb-3 w-16 h-16 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdS4cFzlw079pbrxtT3chQO22yJSkI9v6UxWBWNUAjbr_1KWFouv-4Z9CdLUSi9zjcJI&usqp=CAU" alt="">
+                                    <h2 class="mb-3 text-2xl font-bold">Saad Hashmi</h2>
+                                    <p class="mb-3 leading-tight text-left">
+                                        Account Manager and Client Manager
+                                    </p>
+                                    <p class="leading-tight text-left">
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi velit quod suscipit odit est culpa fugiat consequatur beatae obcaecati, voluptatum recusandae quaerat fugit nam debitis, perferendis earum quo a neque?
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+
+                <!-- AAAAAAAAAAAAAAAAAAAAAAA  About Section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+                <div class="container m-auto mt-10 px-4">
+                    <h2 class="font-bold lg:text-[42px] text-[36px]  hover:decoration-blue-950 my-8">Contact us</h2>
+                    <div class="md:columns-2 columns-1 ">
+                        <div>
+                            <h6 class="mb-10 ">Explore our diverse portfolio showcasing innovative web development projects crafted with precision and creativity. From sleek designs to robust functionalities, each project reflects our commitment to excellence. Let our work inspire your next big idea!</h6>
+                            
+                            <h3 class="font-bold mt-2 mb-1"> Email</h3>
+                            <h4 class="font-semibold mt-2 mb- pl-2">abcdef@gmail.com</h4>
+
+                            <h3 class="font-bold mt-2 mb-1"> Phone</h3>
+                            <h4 class="font-semibold mt-2 mb- pl-2">+7424830909</h4>
+
+                            <h3 class="font-bold mt-2 mb-1"> Website</h3>
+                            <h4 class="font-semibold mt-2 mb- pl-2">coomingsoon.com</h4>
+
+                        </div>
+                        <div class=""> <iframe 
+                            class=" " width="100%" height="300px"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8455798064987!2d90.41251831539629!3d23.810331684566882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b1c3b79df7%3A0xa053870915f0c98c!2sDhaka!5e0!3m2!1sen!2sbd!4v1636471168173!5m2!1sen!2sbd" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe></div>
+
+                    </div>
+                    
+
+                </div>
+                
+            </main>
+
+            <footer class="mt-7 bg-red-800  py-5" >
+                <h6 class=" font-bold text-center text-white">Copy-right | 2024 | All Reserved </h6>
+            </footer>
+    
+    
+</body>
+</html>
